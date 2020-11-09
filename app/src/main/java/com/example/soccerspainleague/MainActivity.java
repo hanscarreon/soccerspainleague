@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.soccerspainleague.fragments.GamesFragment;
+import com.example.soccerspainleague.fragments.HomeFragment;
 import com.example.soccerspainleague.fragments.LeaguesFragment;
 import com.example.soccerspainleague.fragments.LiveFragment;
 import com.example.soccerspainleague.fragments.TeamsFragment;
@@ -47,12 +48,17 @@ public class MainActivity extends AppCompatActivity {
                         fragmentManager = getSupportFragmentManager();
                         fragmentManager.beginTransaction().replace(R.id.frame_layout, new LiveFragment()).commit();
                         return true;
+
+                    case R.id.home:
+                        fragmentManager = getSupportFragmentManager();
+                        fragmentManager.beginTransaction().replace(R.id.frame_layout, new HomeFragment()).commit();
+                        return true;
                 }
 
                 return false;
             }
         });
 
-        bottomNavigationView.setSelectedItemId(R.id.games);
+        bottomNavigationView.setSelectedItemId(R.id.home);
     }
 }

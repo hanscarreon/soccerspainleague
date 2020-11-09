@@ -24,6 +24,7 @@ public class Splash extends AppCompatActivity {
         controller.getTeamsSpain();
         controller.getGamesSpain();
         controller.getLiveSpain();
+        controller.getNewsData();
 
 
         getData();
@@ -48,7 +49,7 @@ public class Splash extends AppCompatActivity {
 
             @Override
             public void onFinish() {
-                if(controller.retrieveLeagues() != null && controller.retrieveGames() != null && controller.retrieveTeams() != null){
+                if(controller.retrieveLeagues() != null && controller.retrieveGames() != null && controller.retrieveTeams() != null && controller.retrieveNews()!= null){
                     Intent intent = new Intent(Splash.this,MainActivity.class);
                     startActivity(intent);
                     finish();

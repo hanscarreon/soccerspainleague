@@ -11,6 +11,11 @@
         android:title="Teams">
     </item>
     <item
+        android:id="@+id/home"
+        android:icon="@drawable/league"
+        android:title="Home">
+    </item>
+    <item
         android:id="@+id/leagues"
         android:icon="@drawable/league"
         android:title="Leagues">
