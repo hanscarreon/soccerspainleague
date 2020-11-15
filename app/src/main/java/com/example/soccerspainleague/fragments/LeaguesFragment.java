@@ -112,6 +112,9 @@ public class LeaguesFragment extends Fragment {
 //            }
 //
 //            @Override
+
+
+
 //            public void onFailure(Call<LeaguesModel> call, Throwable t) {
 //                Toast.makeText(getContext(), t.getMessage(), Toast.LENGTH_SHORT).show();
 //            }
